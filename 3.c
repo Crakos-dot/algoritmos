@@ -9,7 +9,7 @@ int main(int argc, char  *argv[]) {
   int c= atoi(argv[3]);
 
 bool rs=true;
-rs=(a>=(b+c))||b>=(b+c)||c>=(a+b);
+rs=(a>=(b+c)) && b>=(b+c) && c>=(a+b);
 
 
 printf("%s\n",rs ?"Verdadero":"Falso");
